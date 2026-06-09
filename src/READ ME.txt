@@ -1,0 +1,14 @@
+This code can be used to reproduce all result figures from the manuscript: Weber's Law in walking: sensory scaling is observed in multi-sensory, dynamic tasks.
+
+Weber_Figures.m is a MATLAB script that outputs Figures 2 and 3 of the manuscript. MATLAB has a web-based access option, however a license and account are required.
+
+Make sure your "CurrentFolder" in MATLAB is set to where the data files are located.
+Data for this analysis can be found in the Data folder of this repository. The script loads Data.csv (trial-level behavioral data) and JNDs_RT folder mat files (JNDs estimated from reaction time data via DDM in the python code).
+Helper functions Boxplot.m and probeColorMap.m must be in the MATLAB path.
+
+
+DDM_RT_fit.ipynb is a Python-based Jupyter Notebook that outputs Figure 4 of the manuscript. No license is needed to run it.
+
+Data for this analysis can be found in the Data folder as Data.csv.
+JNDs derived from reaction time data alone via the drift-diffusion model (DDM) are saved as output (currently commented out) and can also be found in the Data folder, organized by group.
+The notebook depends on utils.py, which must be in the same directory as the notebook.

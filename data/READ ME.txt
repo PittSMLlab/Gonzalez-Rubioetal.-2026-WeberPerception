@@ -1,0 +1,8 @@
+
+This folder contains the data collected from 39 neurotypical young adults who completed two-alternative forced-choice (2AFC) perceptual tasks on a split-belt treadmill. Participants were assigned to one of three groups (Slow-group 2, Comfortable-group 1, or Fast-group 3; n = 13 each) and completed two sessions on separate days, each comprising a group-specific testing speed (0.7, 1.4, or 1.75 m/s) and a common reference speed (1.05 m/s).
+
+Each trial recorded the presented belt speed difference (ΔV, in m/s), the participant's binary choice response (left or right leg perceived as slower), and reaction time (time from auditory start cue to button press). 
+
+Data are organized by participant and session (columns in the data file table). See the associated manuscript for full details on the experimental protocol and task design.
+
+Also included is a file containing the JNDs estimated from participants' choice data, derived from the generalized linear mixed-effects model (GLMM) described in the manuscript. Additionally, a subfolder contains the JNDs estimated from reaction time data alone for each group, computed via the drift-diffusion model (DDM); these files are used in conjunction with the associated Python code for the DDM analysis.
