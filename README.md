@@ -1,19 +1,24 @@
-# Weber's Law in walking: sensory scaling is observed in multi-sensory, dynamic tasks. 
-Gonzalez-Rubio, M., Iturralde, P.A. & Torres-Oviedo, G. Weber’s Law in walking: sensory scaling is observed in multi-sensory, dynamic tasks. Sci Rep (2026). https://doi.org/10.1038/s41598-026-54948-5
+# Weber's Law in walking: sensory scaling is observed in multi-sensory, dynamic tasks
+
+Gonzalez-Rubio, M., Iturralde, P.A. & Torres-Oviedo, G. Weber's Law in walking: sensory scaling is observed in multi-sensory, dynamic tasks. Sci Rep (2026). https://doi.org/10.1038/s41598-026-54948-5
+
+## Requirements
+- MATLAB with the **Statistics and Machine Learning Toolbox** installed (required for `Weber_Figures.m`).
+- Python 3 with Jupyter Notebook (for `DDM_RT_fit.ipynb`).
 
 ## Data Organization
-Data from the experiment are made available in the `Data` folder of this repository. There are two types of files:
-- `Data.csv` stores a table in CSV format containing task information information for all 39 participants,
+Data from the experiment are made available in the `Data` folder of this repository. **Download the entire `Data` folder rather than individual files** — the scripts reference files using relative paths (e.g. `Data/Data.csv`). If you download files individually and place them elsewhere, you will need to manually update the file path in the code to match wherever you saved them.
+
+There are two types of files:
+- `Data.csv` stores a table in CSV format containing task information for all 39 participants,
 including the presented belt speed difference (ΔV, in mm/s), binary choice response (left or right leg
 perceived as slower), reaction time (time from auditory start cue to button press), participant ID, block
 number, and speed condition.
 - `JND_Choices.mat` contains the just noticeable differences (JNDs) estimated from participants' choice
 data, derived from the generalized linear mixed-effects model (GLMM) described in the manuscript.
-
 A subfolder within `Data` contains the JNDs estimated from reaction time data alone for each group
 (Slow, Comfortable, and Fast), computed via the drift-diffusion model (DDM). These files are used in
 conjunction with the Python code described below.
-
 Original raw data files (.mat) will be made available upon request.
 
 ## Analysis
