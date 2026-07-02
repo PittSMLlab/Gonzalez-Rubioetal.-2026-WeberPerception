@@ -136,10 +136,10 @@ countPS=1;
 countWF=1;
 for i=1:length(fileNames)
     if contains(fileNames{i},'pertSize')
-        JND_RT{1}{countPS}=readtable(['Z:\Marcela\Perception Studies\Weber Perception\WeberPerception\Data\JNDs_RT\' fileNames{i}]);
+        JND_RT{1}{countPS}=readtable(['Data\JNDs_RT\' fileNames{i}]);
         countPS=countPS+1;
     else
-        JND_RT{2}{countWF}=readtable(['Z:\Marcela\Perception Studies\Weber Perception\WeberPerception\Data\JNDs_RT\' fileNames{i}]);
+        JND_RT{2}{countWF}=readtable(['Data\JNDs_RT\' fileNames{i}]);
         countWF=countWF+1;
     end
 end
